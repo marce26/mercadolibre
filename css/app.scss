@@ -1,0 +1,103 @@
+   $red-color: #900;
+   $grey-color: #ccc;
+   $black-color: #000;
+   
+   
+   ul,li{
+   		margin: 0;
+		list-style:none;
+		padding: 0;
+   }
+   
+   .tabs{
+   		margin: 0 !important;
+   }
+   
+   .main-image img{
+   		border: 1px solid $grey-color;
+   }
+   
+   .left{
+   		float:left;
+   }
+   
+   .right{
+   		float:left;
+   }
+   
+   	.padding-xsm{ padding:0.5em; }
+	.padding-xsm-tb{ padding:0.5em 0; }
+	.padding-xsm-lr{ padding:0 0.5em; }
+	.padding-xsm-b{ padding-bottom:0.5em; }
+	.padding-xsm-t{ padding-top:0.5em; }
+	.padding-sm{ padding:1em; }
+	.padding-sm-tb{ padding:1em 0; }
+	.padding-sm-lr{ padding:0 1em; }
+	.padding-sm-t{ padding-top:1em; }
+	.padding-sm-b{ padding-bottom:1em; }
+	.padding-sm-l{ padding-left:1em; }
+	.padding-sm-r{ padding-right:1em; }
+	.padding-md{ padding:2em; }
+	.padding-md-t{ padding-top:2em; }
+	.padding-md-b{ padding-button:2em; }
+	.padding-md-l{ padding-left:2em; }
+	.padding-md-r{ padding-right:2em; }
+	.padding-lg{ padding:3em; }
+
+
+
+
+    @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+ 
+   *, *:before, *:after {margin: 0; padding: 0; box-sizing: border-box;}
+   body {background: #fff; font: 14px 'Open Sans', sans-serif;}
+ 
+   h1 {padding: 30px 0; font-weight: 400; text-align: center;}
+   p {margin: 0 0 20px; line-height: 1.5;}
+ 
+   .main {margin: 0 auto; min-width: 320px; max-width: 800px;}
+   .content {background: #fff; color: #373737;}
+   .content > div {display: none; padding: 20px 25px 5px;}
+ 
+   input {display: none;}
+   label {display: inline-block; padding: 5px 20px;; text-align: center;background: $grey-color; color: $black-color;}
+   label:hover {color: $black-color; cursor: pointer;}
+   input:checked + label {background: $grey-color; color: $black-color;}
+ 
+   #tab1:checked ~ .content #content1,
+   #tab2:checked ~ .content #content2 {
+     display: block;
+   }
+   
+   .price{
+   		color:$red-color;
+   }
+   
+   .product-detail li{
+   		margin:10px auto;
+   }
+   
+	.myCarousel .ch-carousel-item {
+		width: 140px;
+		height: 140px;
+	}
+
+	.myCarousel img {
+		max-width: 100%;
+		max-height: 100%;
+		border: 1px solid $grey-color;
+	}
+	
+	.buyer-text{
+		color: #03B;
+	}
+	
+	.seller-text{
+		color: #390;
+	}
+	
+	.buyer-box{ background-color: #CCE3FD; padding:10px 20px;}
+	.seller-box{ background-color: #DBEBD4; padding:10px 20px;}
+
+   
+   @media screen and (max-width: 400px) { label {padding: 15px 10px;} }
