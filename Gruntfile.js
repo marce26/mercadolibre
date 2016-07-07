@@ -1,31 +1,36 @@
-/*
+
 module.exports = function(grunt) {
  	
-  grunt.initConfig({
- 
+  grunt.initConfig({ 
     uglify: {
-      my_target: {
+      target: {
         files: {
         'scripts/scripts.min.js': ['scripts/tiny.js','scripts/chico.js','scripts/app.js']
         }
       } //my_target
     } //uglify
-	
-	
-
-	
-  
+    ,
+    cssmin: {
+	  options: {
+		shorthandCompacting: false,
+		roundingPrecision: -1
+	  },
+	  target: {
+		files: {
+		  'styles/styles.min.css': ['styles/styles.css']
+		}
+	  }
+    }
   });
-  
-  
-  
+    
   
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
+  //grunt.loadNpmTasks('grunt-contrib-compass');
 };
-*/
 
 
+/*
 module.exports = function (grunt) {
  
     // configurable paths
@@ -62,3 +67,4 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
  
 };
+*/

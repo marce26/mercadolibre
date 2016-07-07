@@ -5904,7 +5904,7 @@ ul, li {
   border: 1px solid #ccc; }
 
 .left {
-  float: left; }
+  float: left !important; }
 
 .right {
   float: left; }
@@ -5918,11 +5918,17 @@ ul, li {
 .padding-xsm-lr {
   padding: 0 0.5em; }
 
+.padding-xsm-t {
+  padding-top: 0.5em; }
+
 .padding-xsm-b {
   padding-bottom: 0.5em; }
 
-.padding-xsm-t {
-  padding-top: 0.5em; }
+.padding-xsm-l {
+  padding-left: 0.5em; }
+
+.padding-xsm-r {
+  padding-right: 0.5em; }
 
 .padding-sm {
   padding: 1em; }
@@ -5974,8 +5980,7 @@ body {
 
 h1 {
   padding: 30px 0;
-  font-weight: 400;
-  text-align: center; }
+  font-weight: 400; }
 
 p {
   margin: 0 0 20px;
@@ -5988,7 +5993,8 @@ p {
 
 .content {
   background: #fff;
-  color: #373737; }
+  color: #373737;
+  margin-bottom: 20px; }
 
 .content > div {
   display: none;
@@ -6019,12 +6025,15 @@ input:checked + label {
 .price {
   color: #900; }
 
+.border {
+  border: 1px solid #ccc; }
+
 .product-detail li {
   margin: 10px auto; }
 
 .myCarousel .ch-carousel-item {
-  width: 140px;
-  height: 140px; }
+  width: 100px;
+  height: 100px; }
 
 .myCarousel img {
   max-width: 100%;
@@ -6038,7 +6047,14 @@ input:checked + label {
   color: #390; }
 
 button.ch-btn-large {
-  padding: 5px 10px; }
+  padding: 10px 20px; }
+
+select.ch-form-icon-input {
+  margin: 0;
+  height: 2em !important;
+  padding-top: 0.2em !important;
+  font-size: 1em !important;
+  width: 80px; }
 
 .buyer-box {
   background-color: #CCE3FD;
